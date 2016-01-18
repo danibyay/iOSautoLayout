@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,17 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jjb-nL-M9Z">
-                                <rect key="frame" x="315" y="0.0" width="285" height="251"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jjb-nL-M9Z">
+                                <rect key="frame" x="305" y="0.0" width="295" height="300"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UGG-rm-KQl">
-                                <rect key="frame" x="0.0" y="0.0" width="299" height="251"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGG-rm-KQl">
+                                <rect key="frame" x="0.0" y="0.0" width="295" height="300"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="251" id="Zq7-Xd-UWz"/>
-                                    <constraint firstAttribute="width" constant="299" id="nvC-Sh-GPu"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <constraints>
@@ -35,6 +32,7 @@
                             <constraint firstItem="UGG-rm-KQl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZnF-fv-iJG"/>
                             <constraint firstItem="UGG-rm-KQl" firstAttribute="width" secondItem="Jjb-nL-M9Z" secondAttribute="width" id="iDf-0d-cXP"/>
                             <constraint firstAttribute="trailing" secondItem="Jjb-nL-M9Z" secondAttribute="trailing" id="mzu-Sy-Y1v"/>
+                            <constraint firstItem="UGG-rm-KQl" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="nvH-jB-19Z"/>
                             <constraint firstItem="UGG-rm-KQl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vcB-Vo-tF1"/>
                             <constraint firstItem="UGG-rm-KQl" firstAttribute="height" secondItem="Jjb-nL-M9Z" secondAttribute="height" id="yfi-mB-Bzu"/>
                             <constraint firstItem="Jjb-nL-M9Z" firstAttribute="leading" secondItem="UGG-rm-KQl" secondAttribute="trailing" constant="10" id="zcS-Tz-FRu"/>
