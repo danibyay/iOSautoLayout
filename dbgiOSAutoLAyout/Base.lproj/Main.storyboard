@@ -18,19 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jjb-nL-M9Z">
-                                <rect key="frame" x="305" y="0.0" width="295" height="300"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGG-rm-KQl">
                                 <rect key="frame" x="0.0" y="0.0" width="295" height="300"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jjb-nL-M9Z">
+                                <rect key="frame" x="305" y="0.0" width="295" height="300"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTn-Mn-Wge">
+                                <rect key="frame" x="0.0" y="308" width="600" height="292"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="PTn-Mn-Wge" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CM4-qZ-xPU"/>
+                            <constraint firstItem="PTn-Mn-Wge" firstAttribute="top" secondItem="Jjb-nL-M9Z" secondAttribute="bottom" constant="8" id="CM9-v9-c0s"/>
                             <constraint firstItem="Jjb-nL-M9Z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ci2-zL-POI"/>
+                            <constraint firstAttribute="trailing" secondItem="PTn-Mn-Wge" secondAttribute="trailing" id="OHS-Mk-rdP"/>
                             <constraint firstItem="UGG-rm-KQl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZnF-fv-iJG"/>
                             <constraint firstItem="UGG-rm-KQl" firstAttribute="width" secondItem="Jjb-nL-M9Z" secondAttribute="width" id="iDf-0d-cXP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PTn-Mn-Wge" secondAttribute="bottom" id="jMb-Of-ZyE"/>
                             <constraint firstAttribute="trailing" secondItem="Jjb-nL-M9Z" secondAttribute="trailing" id="mzu-Sy-Y1v"/>
                             <constraint firstItem="UGG-rm-KQl" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="nvH-jB-19Z"/>
                             <constraint firstItem="UGG-rm-KQl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vcB-Vo-tF1"/>
